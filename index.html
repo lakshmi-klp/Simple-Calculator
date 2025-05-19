@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lucky's Calculator</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="calculator">
+    <div class="header">
+      <button class="mode-toggle" onclick="toggleMode()">Basic</button>
+      <button class="theme-toggle" onclick="toggleTheme()">☀️</button>
+    </div>
+    <div class="display" id="display">0</div>
+    <div class="history" id="history"></div>
+    <div class="scientific-buttons">
+      <button onclick="toggleSecond()">2nd</button>
+      <button onclick="toggleDegRad()">deg</button>
+      <button onclick="appendToDisplay('Math.sin(')">sin</button>
+      <button onclick="appendToDisplay('Math.cos(')">cos</button>
+      <button onclick="appendToDisplay('Math.tan(')">tan</button>
+      <button onclick="appendToDisplay('Math.pow(')">x^y</button>
+      <button onclick="appendToDisplay('Math.log10(')">lg</button>
+      <button onclick="appendToDisplay('Math.log(')">ln</button>
+      <button onclick="appendToDisplay('(')">(</button>
+      <button onclick="appendToDisplay(')')">)</button>
+      <button onclick="appendToDisplay('Math.sqrt(')">√x</button>
+      <button class="clear" onclick="clearDisplay()">AC</button>
+      <button class="clear" onclick="backspace()">⌫</button>
+      <button onclick="appendToDisplay('%')">%</button>
+      <button class="operator" onclick="appendToDisplay('/')">÷</button>
+    </div>
+    <div class="basic-buttons-top">
+      <button class="clear" onclick="clearDisplay()">AC</button>
+      <button class="clear" onclick="backspace()">⌫</button>
+      <button onclick="appendToDisplay('%')">%</button>
+      <button class="operator" onclick="appendToDisplay('/')">÷</button>
+    </div>
+    <div class="buttons">
+      <button onclick="appendToDisplay('7')">7</button>
+      <button onclick="appendToDisplay('8')">8</button>
+      <button onclick="appendToDisplay('9')">9</button>
+      <button class="operator" onclick="appendToDisplay('*')">×</button>
+      <button onclick="appendToDisplay('4')">4</button>
+      <button onclick="appendToDisplay('5')">5</button>
+      <button onclick="appendToDisplay('6')">6</button>
+      <button class="operator" onclick="appendToDisplay('-')">−</button>
+      <button onclick="appendToDisplay('1')">1</button>
+      <button onclick="appendToDisplay('2')">2</button>
+      <button onclick="appendToDisplay('3')">3</button>
+      <button class="operator" onclick="appendToDisplay('+')">+</button>
+      <button onclick="appendToDisplay('0')">0</button>
+      <button onclick="appendToDisplay('0')">0</button>
+      <button onclick="appendToDisplay('.')">.</button>
+      <button class="equals" onclick="calculate()">=</button>
+      <button onclick="toggleHistory()">History</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
