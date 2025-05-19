@@ -10,7 +10,7 @@ A web-based calculator inspired by the Samsung Calculator app, developed during 
 - **Keyboard Support**: Use the keyboard for input.
 
 ## Files
-- `main.html`: HTML structure of the calculator.
+- `index.html`: HTML structure of the calculator.
 - `styles.css`: CSS styles for the calculator's appearance.
 - `script.js`: JavaScript logic for the calculator's functionality.
 
@@ -24,5 +24,5 @@ A web-based calculator inspired by the Samsung Calculator app, developed during 
 
 
 ## Development
-- Developed during summer vacation 2024 (or 2025, depending on your timeline).
+- Developed during summer vacation 2025
 - Built using HTML, CSS, and JavaScript.
